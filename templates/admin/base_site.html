@@ -1,0 +1,12 @@
+{% extends "admin/base_site.html" %}
+
+{% block title %}Система "Инцидент"{% endblock %}
+
+{% block branding %}<h1>Система "Инцидент"</h1>{% endblock %}
+
+{% block content %}
+    {{ block.super }}
+    <title>Отчетность | Система "Инцидент"</title>
+    <h1>Отчетность:</h1>
+    <h2>В нашей базе {{ incidents_cnt }} инцидентов и {{ communications_cnt }} объектов коммуникации.</h2>
+{% endblock %}
